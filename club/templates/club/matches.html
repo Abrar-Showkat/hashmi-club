@@ -1,0 +1,42 @@
+{% extends 'club/base.html' %}
+
+{% block content %}
+<h3 id="playedmatches">Played Matches</h3>
+{% for match in matches %}
+{% if match.is_date_due %}
+<div id="matchscontainer">
+    <div id="datecontainer">
+    <h6>{{match.date|date:"F Y"}}</h6>
+    <h6>{{match.date|date:"D d"}}</h6>
+    </div>  
+    <h5 id="opposition"> vs {{match.opposition|upper}}</h5>
+    <h6 id="matchplace">{{match.place}}</h6>
+
+    <h4 id="oppositiongoals">{{match.oppositiongoals}}</h4>
+    <h4 id="mygoals">-{{match.mygoals}}</h4>
+    {% if match.mygoals > match.oppositiongoals %}
+    <h5 id="won">WON</h5>
+    {% else %}
+    <h5 id="loss">LOSS</h5>
+    {% endif %}
+</div>
+{% endif %}
+{% endfor %}<br>
+<h3 id="playedmatches">Upcoming Matches</h3>
+{% for match in matches %}
+{% if not match.is_date_due %}
+<div id="matchscontainer">
+    <div id="datecontainer">
+    <h6>{{match.date|date:"F Y"}}</h5>
+    <h6>{{match.date|date:"D d"}}</h6>
+    </div>  
+    <h5 id="opposition"> vs {{match.opposition|upper}}</h5>
+    <h6 id="matchplace">{{match.place}}</h6>
+    <h4 id="matchtime">{{match.time}}</h4>
+    {% endif %}
+</div>
+{% endfor %}
+
+
+{% endblock %}
+

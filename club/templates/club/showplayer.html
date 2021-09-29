@@ -1,0 +1,24 @@
+{% extends 'club/base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <img src="{{player.img.url}}" width="auto" height="200px">
+    <h1>{{player.name|upper}}</h1>
+    <h3>Jersey number is {{player.jersey}}</h3>
+    <h3>Position : {{player.position|capfirst}}</h3>
+    <h3>Matches played: {{player.matches}}</h3>
+
+    {% if player.instaurl and player.fburl %}
+    <span id="follow">Follow him on </span>
+        <a href="{{player.instaurl}}" target="blank"><i class="fa fa-instagram" aria-hidden="true" id="instaicon"></i></a>
+        <a href="{{player.fburl}}" target="blank"><i class="fa fa-facebook" aria-hidden="true" id="fbicon"></i></a>
+    {% elif player.instaurl %}
+    <span id="follow">Follow him on </span>
+    <a href="{{player.instaurl}}" target="blank"><i class="fa fa-instagram" aria-hidden="true" id="instaicon"></i></a>
+    {% elif player.fburl %}  
+    <span id="follow">Follow him on </span>
+    <a href="{{player.fburl}}" target="blank"><i class="fa fa-facebook" aria-hidden="true" id="fbicon"></i></a>
+    {% endif %}
+    </div>
+{% endblock %}

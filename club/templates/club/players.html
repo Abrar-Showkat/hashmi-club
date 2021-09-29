@@ -1,0 +1,19 @@
+{% extends 'club/base.html' %}
+
+{% load static %}
+{% block content %}
+<div id="playercontainer">
+    {% for player in players %}
+    <div id="player"><a href="{% url 'showplayer' player.id %}"><img src="{{player.img.url}}" id="playerimg"/></a>
+    <div id="playerbio">
+        <h3 id="playername">{{player.name|upper}}</h3>
+        <h4 id="jersey">Jersey no. {{player.jersey}}</h4>
+        <h5 id="matchesplyd">Matches played: {{player.matches}}</h5>
+        <h5 id="position">Position : <span id="position_name">{{player.position}}</span></h5>
+    </div>
+</div>
+{% endfor %}
+</div>
+
+
+{% endblock %}

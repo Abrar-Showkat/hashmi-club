@@ -1,0 +1,19 @@
+{% extends 'club/base.html' %}
+{% load static %}
+
+{% block content %}
+<h2 id="management" style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">MANAGEMENT</h2>
+<div id="mngr_container">
+{% for manager in managers %}
+<div id="manager">
+    <img src="{{manager.image.url}}" id="manager_img">
+    <div id="aboutmngr">
+    <h5 id="mngrname">{{manager.name|upper}}</h5>
+    <h6 id="mngrpost">{{manager.post|upper}}</h6>
+</div>
+</div>
+{% endfor %}
+</div>
+
+
+{% endblock %}

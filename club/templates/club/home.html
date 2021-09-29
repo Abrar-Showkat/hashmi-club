@@ -1,0 +1,11 @@
+{% extends 'club/base.html' %}
+{% load static %}
+
+{% block content %}
+{% for image in images %}
+<img src="{{image.homeimage.url}}"  id="homeimg">
+{% endfor %}
+
+
+
+{% endblock %}
