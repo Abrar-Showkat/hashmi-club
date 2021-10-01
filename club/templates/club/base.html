@@ -16,46 +16,31 @@
     
 </head>
 <body>
+  <div class="topnav" id="myTopnav">
+    <a href="{% url 'homepage' %}" class="active" style="font-size: 20px;">HashmeeFC</a>
+    <a href="{% url 'players' %}">PLayers</a>
+    <a href="{% url 'matches' %}">Matches</a>
+    <a href="{% url 'management' %}">Management</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="{% url 'homepage' %}" id="title">HashmiFC</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="False" aria-label="Toggle navigation" onclick="myFunction()">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{% url 'players' %}">Players</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'matches' %}">Matches</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'management' %}">Management</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
-              </li>
-             
-            </ul>
-          </div>
-        </div>
-      </nav>
+    
       {% block content %}  {% endblock %}
 
       
       <script>
         function myFunction() {
-          var x = document.getElementById("navbarNavDropdown");
-          if (x.style.display === "block") {
-            x.style.display = "none";
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
           } else {
-            x.style.display = "block";
+            x.className = "topnav";
           }
         }
         </script>
-        
 </body>
 
 </html>
