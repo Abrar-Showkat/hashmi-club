@@ -1,0 +1,435 @@
+
+.container-fluid{
+    background-color: red;
+    height: 60px;
+}
+#title{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: white;
+}
+#title:hover{
+    font-size: 35px;
+    background-color: black;
+    border-radius: 20px;
+    transition: 0.5s;
+
+}
+
+#navbarNavDropdown ul li a{
+    color: white;
+    padding: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    margin-left: 20px;
+}
+#navbarNavDropdown ul li a:hover{
+    color:  black;
+    background-color: white;
+    border-radius: 30px;
+}
+#home{
+    color: white;
+}
+#homeimg{
+    width: auto;
+    display:block;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+}
+#playercontainer{
+    width: 87%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 80px;
+    
+}
+#player{
+    height: 300px;
+    background-color: white;
+    width: 250px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px 5px grey;
+    position: relative;
+    margin: 20px;
+}
+#playerimg{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 25px;
+    object-fit: cover;
+}
+#player:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}
+#playerbio{
+    width: 100%;
+    height: 36%;
+    position: absolute;
+    bottom: 0px;
+    
+}
+#playername,#jersey,#matchesplyd,#position{
+    text-align: center;
+    color: white;
+    font-size: 17px;
+}
+#position_name{
+    font-weight: bold;
+}
+#playername:hover, #jersey:hover, #matchesplyd:hover, #position:hover{
+    color: black;
+}
+.container{
+    text-align: center;
+    height: 700px;
+}
+.container img{
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 5px 5px grey;
+}
+.container h1{
+    color: red;
+    margin-top: 5px;
+    font-family:'Courgette', cursive;
+    font-size: 35px;
+}
+.container h3{
+     font-size: 35px;
+     color: black;
+     font-family: 'Pacifico', cursive;
+}
+#follow{
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#instaicon{
+    font-size: 30px;
+   
+}
+#fbicon{
+    font-size: 30px;
+}
+#playedmatches{
+    margin-left: 130px;
+}
+#matchscontainer{
+    border: 1px solid grey;
+    background-color: whitesmoke;
+    width: 80%;
+    height: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 10px;
+}
+#datecontainer{
+    background-color: red;
+    width: 150px;
+    padding: 7px;
+    color: white;
+
+}
+#opposition{
+    margin-left: 200px;
+    margin-top: -55px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    text-decoration: underline;
+
+}
+#matchplace{
+    margin-left: 200px;
+    margin-top: -2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#oppositiongoals{
+    margin-left: 860px; margin-top: -55px;
+}
+#mygoals{
+    margin-left: 885px; margin-top: -36px;
+}
+#won{
+    margin-left: 950px; margin-top: -33px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#loss{
+    margin-left: 950px; margin-top: -33px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#matchtime{
+    margin-left: 860px; margin-top: -55px;
+}
+#management{
+    margin-left: 0, auto;
+}
+#mngr_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    
+
+}
+#manager{
+    position: relative;
+    width:  300px;
+    height: 300px;
+    border: 1px solid grey;
+
+
+}
+#aboutmngr{
+    height: 90px; 
+    background-color: cadetblue;
+    width: 100%; position: absolute;
+    bottom: 0.5px;
+}
+#manager_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#mngrname{
+    text-align: center; 
+    font-size: 20px;
+    margin-top: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    color: white;
+
+}
+#mngrpost{
+    text-align: center; font-size: 18px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    color: red;
+}
+
+@media (max-width: 500px){
+    .container-fluid{
+        background-color: red;
+        height: 60px;
+    }
+    #navbarNavDropdown{
+        background-color: black;
+        margin-top: 11px;
+        width: 100%;
+    }
+    #navbarNavDropdown ul li a{
+        font-size: 20px;
+        float: left;
+    }
+    #navbarNavDropdown ul li:hover li {
+        background-color: white;
+        color: black;
+    }
+    #title{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 25px;
+        color: white;
+        margin-left: 20px;
+    }
+    #homeimg{
+        width: auto;
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        border-radius: 40px;
+    }
+    #playercontainer{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 8px;
+        
+    }
+    #player{
+        height: 150px;
+        background-color: white;
+        width: 150px;
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px 5px grey;
+        position: relative;
+        margin-left: 8px;
+    }
+    #playerimg{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        border-radius: 25px;
+        object-fit: cover;
+    }
+    #player:hover{
+        transform: scale(1.3);
+        transition: 1s;
+    }
+    #playerbio{
+        width: 100%;
+        height: 36%;
+        position: absolute;
+        bottom: 0px;
+        
+    }
+    #playername,#jersey,#matchesplyd,#position{
+        text-align: center;
+        color: white;
+        font-size: 5.8px;
+    }
+    #position_name{
+        font-weight: bold;
+    }
+    #playername:hover, #jersey:hover, #matchesplyd:hover, #position:hover{
+        color: black;
+    }
+    .container{
+        text-align: center;
+        height: 700px;
+    }
+    .container img{
+        border-radius: 20px;
+        margin-top: 50px;
+        box-shadow: 0px 0px 5px 5px grey;
+    }
+    .container h1{
+        color: red;
+        margin-top: 5px;
+        font-family:'Courgette', cursive;
+        font-size: 30px;
+    }
+    .container h3{
+         font-size: 28px;
+         color: black;
+         font-family: 'Pacifico', cursive;
+    }
+    #follow{
+        font-size: 20px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #instaicon{
+        font-size: 20px;
+       
+    }
+    #fbicon{
+        font-size: 20px;
+    }
+    #playedmatches{
+        margin-left: 15px;
+        color: green;
+        font-size: 20px;
+    }
+    #matchscontainer{
+        border: 1px solid grey;
+        background-color: whitesmoke;
+        width: 90%;
+        height: 65px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    #datecontainer{
+        background-color: red;
+        width: 80px;
+        padding: 2px;
+        color: white;
+        margin-left: -7px;
+    
+    }
+    #datecontainer h6{
+        font-size: 10px;
+    }
+    #opposition{
+        margin-left: 86px;
+        margin-top: -35px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 10px;
+        color: black;
+        text-decoration: underline;
+    
+    }
+    #matchplace{
+        margin-left: 86px;
+        margin-top: -2px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 8px;
+    }
+    #oppositiongoals{
+        margin-left: 250px;
+        margin-top: -35px;
+        font-size: 11px;
+    }
+    #mygoals{
+        margin-left: 262px; 
+        margin-top: -20.7px;
+        font-size: 11px;
+    }
+    #won{
+        margin-left: 290px; 
+        margin-top: -18px; 
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 8px;
+    }
+    #loss{
+        margin-left: 290px; 
+        margin-top: -18px; 
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 8px;
+    }
+    #matchtime{
+        margin-left: 245px;
+        margin-top: -35px;
+        font-size: 12px;
+    }
+    #management{
+        margin-left: 0, auto;
+    }
+    #mngr_container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: 20px
+    }
+    #manager{
+        position: relative;
+        width:  110px;
+        height: 110px;
+        border: 1px solid grey;
+    
+    }
+    #manager_img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #aboutmngr{
+        height: 30px; 
+        background-color: cadetblue;
+        width: 100%;
+        position: absolute;
+        bottom: 0.5px;
+    }
+    #mngrname{
+        text-align: center; 
+        font-size: 8px;
+        margin-top: 2px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+        color: white;
+    
+    }
+    #mngrpost{
+        text-align: center; 
+        font-size: 7px; 
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+        color: red;
+        margin-top: -5px;
+    }
+
+
+}
