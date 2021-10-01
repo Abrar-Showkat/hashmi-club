@@ -1,3 +1,4 @@
+
 .container-fluid{
     background-color: red;
     height: 60px;
@@ -212,10 +213,24 @@
         background-color: red;
         height: 60px;
     }
+    #navbarNavDropdown{
+        background-color: black;
+        margin-top: 11px;
+        width: 100%;
+    }
+    #navbarNavDropdown ul li a{
+        font-size: 20px;
+        float: left;
+    }
+    #navbarNavDropdown ul li:hover li {
+        background-color: white;
+        color: black;
+    }
     #title{
         font-family: 'Courier New', Courier, monospace;
         font-size: 25px;
         color: white;
+        margin-left: 20px;
     }
     #homeimg{
         width: auto;
