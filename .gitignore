@@ -3,8 +3,5 @@
 *.pot
 *.pyc
 <<<<<<< HEAD
-__pycache__
-=======
->>>>>>> 1f1e8d83a06b45122778cc25cf4c38a516db5ff6
 local_settings.py
 
